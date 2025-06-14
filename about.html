@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Adesh | Frontend Developer</title> <!-- Updated Name, Added Role -->
+    <meta name="description" content="Learn more about Adesh, my journey, technical skills (HTML, CSS, JS, Bootstrap, jQuery), and passion for frontend development and web design."> <!-- Updated Name, Added Skills -->
+
+    <!-- Libraries and CSS (Keep includes the same) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+        <!-- Favicon img  -->
+     <link rel="icon" href="Image/Favicon img.jpg" sizes="any">  
+</head>
+<body>
+    <!-- Add this right after <body> tag in all your HTML files -->
+    <div class="page-transition-overlay"></div>
+    
+    <!-- Preloader -->
+    <div id="preloader"><div class="loader"></div></div>
+
+    <!-- Navigation (REMOVED mainNav-scrolled class) -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="Image/logo.jpg" alt="Adesh Logo" style="height: 60px; width: auto;" loading="lazy"> 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header (Keep structure, ensure overlay is strong enough via CSS) -->
+     <header class="page-header about-header text-center">
+        <div class="container">
+            <div class="page-header-content" data-aos="fade-in">
+                <h1 class="display-4 fw-bold text-primary">About Me</h1>
+                <p class="lead text-primary opacity-75">My journey, skills, and dedication to crafting exceptional web experiences.</p> <!-- Refined subheading -->
+            </div>
+        </div>
+         <div class="header-overlay"></div> <!-- Overlay ensures text visibility -->
+    </header>
+
+    <main>
+        <!-- About Me Content (Keep as is) -->
+        <section class="page-section" id="about-content">
+            <div class="container">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <img src="Image/My Pic.jpg" alt="Adesh - Professional" class="img-fluid rounded mb-4 mb-lg-0 shadow-lg" loading="lazy"> <!-- Updated Alt Text, Added shadow -->
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+                        <h2 class="section-heading mb-4">My Story & Philosophy</h2> <!-- Refined heading -->
+                        <p class="text-muted mb-4 small">Hello! I’m Adesh, a passionate Frontend Developer with a growing interest in web development and business. My journey began with a curiosity for digital creation, and over the past 6 months, I’ve been focused on mastering HTML, CSS, JavaScript, and Bootstrap, while also beginning to explore backend development.</p>
+                        <p class="text-muted mb-4 small">I use AI tools like ChatGPT to speed up development and boost productivity, but I always refine the final code to meet my standards. Some projects in this portfolio, including the portfolio itself, were created with AI assistance, combined with my own efforts. I take full responsibility for problem-solving, learning through challenges, and continuously improving my skills.<br>AI is often seen as a threat to jobs, but I believe it’s a tool to enhance our work. Combined with human creativity and problem-solving, AI helps us work smarter, boost efficiency, and adapt to the fast-changing tech world.</p>
+                        <p class="text-muted mb-4 small">My goal is to master development, pursue freelancing, and eventually become an entrepreneur. I'm passionate about tech, data science, and cybersecurity, and aim to build a successful business. I’m dedicated to creating responsive, visually appealing websites that deliver high-quality results and meet client expectations.</p>
+                         <a href="contact.html" class="btn btn-primary mt-3">Let's Build Something Great</a> <!-- Refined button text -->
+                         <a href="My-Resume.pdf" class="btn btn-outline-primary mt-3 ms-2" target="_blank">View My Resume</a> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        
+        <!-- Skills Section (REVISED - Added text inside progress bar divs, adjusted JavaScript skill %, replaced Figma/Adobe) -->
+        <section class="page-section bg-light" id="skills">
+            <div class="container">
+                <div class="text-center" data-aos="fade-up">
+                    <h2 class="section-heading text-uppercase">Technical Proficiency</h2> <!-- Refined heading -->
+                    <h3 class="section-subheading text-muted mb-5">My toolkit for building modern web solutions.</h3>
+                </div>
+                <div class="row">
+                    <!-- Skill Category 1: Frontend -->
+                    <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                        <h4 class="text-center mb-4"><i class="fas fa-code me-2 text-primary"></i>Frontend Development</h4>
+                        <div class="skill-item mb-3">
+                            <span class="skill-name">HTML5</span>
+                            <div class="progress" role="progressbar" aria-label="HTML5 Skill" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-primary" style="width: 95px;">95%</div> <!-- Text Added, width in px -->
+                            </div>
+                        </div>
+                         <div class="skill-item mb-3">
+                            <span class="skill-name">CSS3 & SCSS</span>
+                             <div class="progress" role="progressbar" aria-label="CSS Skill" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-primary" style="width: 90px;">90%</div> <!-- Text Added, width in px -->
+                            </div>
+                        </div>
+                         <div class="skill-item mb-3">
+                            <span class="skill-name">Bootstrap 5</span>
+                             <div class="progress" role="progressbar" aria-label="Bootstrap Skill" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-primary" style="width: 95px;">95%</div> <!-- Text Added, width in px -->
+                            </div>
+                        </div>
+                         <div class="skill-item mb-3">
+                            <span class="skill-name">JavaScript</span>
+                             <div class="progress" role="progressbar" aria-label="JavaScript Skill" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-primary" style="width: 75px;">75%</div> <!-- Text Added, width in px, reduced % -->
+                            </div>
+                        </div>
+                         <div class="skill-item mb-3">
+                            <span class="skill-name">jQuery</span>
+                             <div class="progress" role="progressbar" aria-label="jQuery Skill" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-primary" style="width: 90px;">90%</div> <!-- Text Added, width in px -->
+                            </div>
+                        </div>
+                        <!-- Add more frontend skills -->
+                    </div>
+
+                     <!-- Skill Category 2: Design & Tools -->
+                     <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                        <h4 class="text-center mb-4"><i class="fas fa-tools me-2 text-primary"></i>Design & Tools</h4>
+                         <div class="skill-item mb-3">
+                            <span class="skill-name">UI/UX Principles</span>
+                             <div class="progress" role="progressbar" aria-label="UI/UX Skill" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-secondary" style="width: 80px;">80%</div> <!-- Text Added, width in px -->
+                            </div>
+                        </div>
+                         <div class="skill-item mb-3">
+                            <span class="skill-name">Responsive Design</span>
+                             <div class="progress" role="progressbar" aria-label="Responsive Design Skill" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-secondary" style="width: 98px;">98%</div> <!-- Text Added, width in px -->
+                            </div>
+                        </div>
+                         <div class="skill-item mb-3">
+                            <span class="skill-name">Figma / Adobe XD</span> <!-- Adjust as needed -->
+                             <div class="progress" role="progressbar" aria-label="Design Software Skill" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-secondary" style="width: 75px;">75%</div> <!-- Text Added, width in px -->
+                            </div>
+                        </div>
+                         <div class="skill-item mb-3">
+                            <span class="skill-name">Git & GitHub</span>
+                             <div class="progress" role="progressbar" aria-label="Git Skill" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-secondary" style="width: 85px;">85%</div> <!-- Text Added, width in px -->
+                            </div>
+                        </div>
+                         <div class="skill-item mb-3">
+                            <span class="skill-name">Browser DevTools</span>
+                             <div class="progress" role="progressbar" aria-label="DevTools Skill" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-secondary" style="width: 95px;">95%</div> <!-- Text Added, width in px -->
+                            </div>
+                        </div>
+                        <!-- Add more tools/design skills -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Optional: My Process Section (Keep structure, icons already adjusted) -->
+        <section class="page-section" id="process">
+             <div class="container">
+                <div class="text-center" data-aos="fade-up">
+                    <h2 class="section-heading text-uppercase">My Development Process</h2> <!-- Refined heading -->
+                    <h3 class="section-subheading text-muted mb-5">A structured approach for successful outcomes.</h3>
+                </div>
+                <ul class="timeline">
+                    <li data-aos="fade-right">
+                        <div class="timeline-image"><i class="fas fa-comments fa-fw"></i></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>1. Discovery & Strategy</h4> <!-- Added numbering -->
+                                <h5 class="subheading">Understanding Your Vision</h5>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">In-depth discussion of goals, target audience, requirements, and success metrics.</p></div> <!-- Refined text -->
+                        </div>
+                    </li>
+                    <li class="timeline-inverted" data-aos="fade-left">
+                        <div class="timeline-image"><i class="fas fa-drafting-compass fa-fw"></i></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2. Design & Prototyping</h4>
+                                <h5 class="subheading">Visualizing the Solution</h5>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Creating wireframes, mockups, and interactive prototypes focused on optimal UX/UI.</p></div>
+                        </div>
+                    </li>
+                    <li data-aos="fade-right">
+                        <div class="timeline-image"><i class="fas fa-code fa-fw"></i></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>3. Development & Coding</h4>
+                                <h5 class="subheading">Building with Precision</h5>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Translating designs into clean, efficient, and responsive code using modern web standards.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted" data-aos="fade-left">
+                        <div class="timeline-image"><i class="fas fa-rocket fa-fw"></i></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>4. Testing & Deployment</h4>
+                                <h5 class="subheading">Ensuring Quality & Launch</h5>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Rigorous testing across browsers/devices, followed by seamless deployment and handover.</p></div>
+                        </div>
+                    </li>
+                     <li class="timeline-inverted" data-aos="fade-up">
+                         <div class="timeline-image timeline-image-last">
+                            <h4>Let's<br>Create<br>Together!</h4> <!-- Refined text -->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer (Keep as is) -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                 <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 text-center text-md-start">
+                    <div class="footer-brand">
+                        <h3>Adesh</h3>
+                        <p>Frontend Developer & Web Designer</p>
+                    </div>
+                </div>
+                 <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 text-center text-md-center">
+                    <h5 class="text-white mb-3">Connect</h5>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/adesh-makhija-a08a93361/" class="social-icon me-2" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/adesh-kumar09" class="social-icon me-2" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                       <a href="https://www.instagram.com/codewithadiii?igsh=MTQ1aG8zbjQwM3J3Yg==
+" class="social-icon me-2" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <!-- Add other social links if needed -->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 text-center"> 
+                     <h5 class="text-white mb-3 text-center">Quick Links</h5>
+                    <div class="footer-nav">
+                        <a href="portfolio.html" class="footer-link">View Portfolio</a> <span class="footer-link-divider">|</span>
+                        <a href="services.html" class="footer-link">My Services</a> <span class="footer-link-divider">|</span>
+                        <a href="contact.html" class="footer-link">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer-bottom mt-4 pt-4">
+                <div class="col text-center text-white-50 small">
+                    Copyright &copy; <span id="currentYear"></span> - Adesh. All Rights Reserved.
+                    <span class="mx-2">|</span>
+                    <a href="#!" class="link-light text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#!" class="link-light text-decoration-none">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+     <!-- Back to Top Button -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fas fa-arrow-up"></i></a>
+
+    
+    <!-- JS Libraries and app.js (Keep includes the same) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js" defer></script>
+    <script src="app.js" defer></script>
+</body>
+</html>

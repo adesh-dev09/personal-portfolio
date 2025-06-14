@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Adesh | Let's Collaborate</title>
+    <meta name="description" content="Get in touch with Adesh to discuss your frontend development or web design project. Available for collaboration and new opportunities.">
+
+    <!-- Libraries and CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+        <!-- Favicon img  -->
+     <link rel="icon" href="Image/Favicon img.jpg" sizes="any">  
+</head>
+<body>
+    <!-- Add this right after <body> tag in all your HTML files -->
+    <div class="page-transition-overlay"></div>
+    
+    <!-- Preloader -->
+    <div id="preloader"><div class="loader"></div></div>
+
+    <!-- Navigation -->
+     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+           <a class="navbar-brand" href="index.html">
+            <img src="Image/logo.jpg" alt="Adesh Logo" style="height: 60px; width: auto;" loading="lazy">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     <!-- Page Header -->
+     <header class="page-header contact-header text-center">
+        <div class="container">
+            <div class="page-header-content" data-aos="fade-in">
+                <h1 class="display-4 fw-bold text-primary">Get In Touch</h1>
+                <p class="lead text-primary opacity-75">"Have an idea or a vision in mind? Let’s bring it to life, I’d love to hear from you!"</p>
+            </div>
+        </div>
+         <div class="header-overlay"></div>
+    </header>
+
+    <main>
+        <!-- Contact Form Section -->
+        <section class="page-section" id="contact-form-section">
+            <div class="container">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-7" data-aos="fade-up">
+                        <h2 class="text-center mb-4">Send a Message</h2>
+                        <!-- 
+                            IMPORTANT: Replace "YOUR_FORMSPREE_ENDPOINT" below with your actual Formspree endpoint URL 
+                            for the contact form to work when the site is live.
+                        -->
+                        <form id="contactForm" action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST">
+                            <!-- Name input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." required />
+                                <label for="name">Full name</label>
+                                <div class="invalid-feedback">A name is required.</div>
+                            </div>
+                            <!-- Email address input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" required />
+                                <label for="email">Email address</label>
+                                <div class="invalid-feedback">An email is required.</div>
+                                <div class="invalid-feedback">Email is not valid.</div>
+                            </div>
+                            <!-- Phone number input (optional) -->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="phone" name="phone" type="tel" placeholder="(123) 456-7890" />
+                                <label for="phone">Phone number (Optional)</label>
+                            </div>
+                            <!-- Subject input -->
+                             <div class="form-floating mb-3">
+                                <input class="form-control" id="subject" name="subject" type="text" placeholder="Subject" required />
+                                <label for="subject">Subject</label>
+                                 <div class="invalid-feedback">A subject is required.</div>
+                            </div>
+                            <!-- Message input-->
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" name="message" placeholder="Enter your message here..." style="height: 10rem" required></textarea>
+                                <label for="message">Your Message</label>
+                                <div class="invalid-feedback">A message is required.</div>
+                            </div>
+                            <!-- Submit success/error messages -->
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3 text-success">
+                                    <div class="fw-bolder">Message Submitted!</div>
+                                    This is a frontend demonstration. For actual inquiries, please use the contact methods below.
+                                </div>
+                            </div>
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 fw-bold">Submission Note: This is a frontend demo. Please use an alternative contact method below.</div></div>
+                            <!-- Submit Button-->
+                            <div class="d-grid"><button class="btn btn-primary btn-xl" id="submitButton" type="submit">Send Message</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Info Section -->
+        <section class="page-section bg-light" id="contact-info">
+            <div class="container">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-heading text-uppercase">Contact Details</h2>
+                    <h3 class="section-subheading text-muted">Alternative ways to connect.</h3>
+                </div>
+                <div class="row text-center gy-4">
+                    <!-- Email -->
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="contact-info-box p-3">
+                            <i class="fas fa-envelope fa-2x mb-3 text-primary"></i>
+                            <h5 class="fw-bold">Email</h5>
+                            <a href="mailto:adeshmakhija9@gmail.com" class="text-decoration-none d-block">adeshmakhija9@gmail.com</a>
+                        </div>
+                    </div>
+                    <!-- LinkedIn -->
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+                        <div class="contact-info-box p-3">
+                            <i class="fab fa-linkedin fa-2x mb-3 text-primary"></i>
+                            <h5 class="fw-bold">LinkedIn</h5>
+                            <a href="https://www.linkedin.com/in/adesh-makhija-a08a93361/" target="_blank" class="text-decoration-none d-block">Connect Professionally</a>
+                        </div>
+                    </div>
+                    <!-- GitHub -->
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="contact-info-box p-3">
+                            <i class="fab fa-github fa-2x mb-3 text-primary"></i>
+                            <h5 class="fw-bold">GitHub</h5>
+                            <a href="https://github.com/adesh-kumar09" target="_blank" class="text-decoration-none d-block">Explore My Projects</a>
+                        </div>
+                    </div>
+                    <!-- Instagram -->
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+                        <div class="contact-info-box p-3">
+                            <i class="fab fa-instagram fa-2x mb-3 text-primary"></i>
+                            <h5 class="fw-bold">Instagram</h5>
+                            <a href="https://www.instagram.com/codewithadiii?igsh=MTQ1aG8zbjQwM3J3Yg==
+" target="_blank" class="text-decoration-none d-block">Follow Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 text-center text-md-start">
+                    <div class="footer-brand">
+                        <h3>Adesh</h3>
+                        <p>Frontend Developer & Web Designer</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 text-center text-md-center">
+                    <h5 class="text-white mb-3">Connect</h5>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/adesh-makhija-a08a93361/" class="social-icon me-2" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/adesh-kumar09" class="social-icon me-2" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/codewithadiii?igsh=MTQ1aG8zbjQwM3J3Yg==
+" class="social-icon me-2" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 text-center">
+                     <h5 class="text-white mb-3 text-center">Quick Links</h5>
+                    <div class="footer-nav">
+                        <a href="portfolio.html" class="footer-link">View Portfolio</a> <span class="footer-link-divider">|</span>
+                        <a href="services.html" class="footer-link">My Services</a> <span class="footer-link-divider">|</span>
+                        <a href="about.html" class="footer-link">About Me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer-bottom mt-4 pt-4">
+                <div class="col text-center text-white-50 small">
+                    Copyright &copy; <span id="currentYear"></span> - Adesh. All Rights Reserved.
+                    <span class="mx-2">|</span>
+                    <a href="#!" class="link-light text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#!" class="link-light text-decoration-none">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+     <!-- Back to Top Button -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JS Libraries and app.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js" defer></script>
+    <script src="app.js" defer></script>
+</body>
+</html>

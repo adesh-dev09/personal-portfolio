@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Adesh | Frontend Projects</title>
+    <meta name="description" content="Explore the web design and frontend development portfolio of Adesh, showcasing projects built with HTML, CSS, JavaScript, Bootstrap, and jQuery.">
+
+    <!-- Libraries and CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+        <!-- Favicon img  -->
+     <link rel="icon" href="Image/Favicon img.jpg" sizes="any">  
+</head>
+<body>
+    <!-- Add this right after <body> tag in all your HTML files -->
+    <div class="page-transition-overlay"></div>
+    
+    <!-- Preloader -->
+    <div id="preloader"><div class="loader"></div></div>
+
+    <!-- Navigation -->
+     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+       <a class="navbar-brand" href="index.html">
+            <img src="Image/logo.jpg" alt="Adesh Logo" style="height: 60px; width: auto;" loading="lazy">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     <!-- Page Header -->
+     <header class="page-header portfolio-header text-center">
+        <div class="container">
+            <div class="page-header-content" data-aos="fade-in">
+                <h1 class="display-4 fw-bold text-primary">My Portfolio</h1>
+                <p class="lead text-primary opacity-75">A curated selection of projects showcasing my skills in action.</p>
+            </div>
+        </div>
+         <div class="header-overlay"></div>
+    </header>
+
+    <main>
+        <!-- Portfolio Grid Section -->
+        <section class="page-section bg-light" id="portfolio-grid">
+            <div class="container">
+                <!-- Section Heading -->
+                <div class="text-center" data-aos="fade-up">
+                    <h2 class="section-heading text-uppercase">My Projects</h2>
+                    <h3 class="section-subheading text-muted mb-5">Explore a selection of my work.</h3>
+                </div>
+
+                <!-- Filter Buttons (Removed as per user request - all projects shown) -->
+                <!--
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-10 text-center" data-aos="fade-up">
+                        <button class="btn btn-outline-primary filter-button active mx-1 mb-2" data-filter="all">All Projects</button>
+                        <button class="btn btn-outline-primary filter-button mx-1 mb-2" data-filter="design">Web Design</button>
+                        <button class="btn btn-outline-primary filter-button mx-1 mb-2" data-filter="dev">Development</button>
+                        <button class="btn btn-outline-primary filter-button mx-1 mb-2" data-filter="bootstrap">Bootstrap</button>
+                        <button class="btn btn-outline-primary filter-button mx-1 mb-2" data-filter="javascript">JavaScript/jQuery</button>
+                    </div>
+                </div>
+                -->
+
+                <!-- Portfolio Items -->
+                <div class="row g-4 portfolio-container">
+                    <!-- Item 1 -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 portfolio-item" data-aos="fade-up" data-aos-delay="100" id="project1">
+                        <div class="portfolio-wrap card border-0 shadow-sm h-100">
+                            <a href="https://adesh-kumar09.github.io/aqua-harevst-project/" target="_blank" class="portfolio-img-link">
+                                <img src="Image/Rainwater Project.jpg" class="card-img-top" alt="Project 1" loading="lazy">
+                            </a>
+                            <div class="portfolio-info card-body">
+                                <h4 class="card-title">Aqua Harvest</h4>
+                                <p class="card-text text-muted small">Category: Mixed Projects</p>
+                                <div class="portfolio-links">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#portfolioModal1" title="More Details"><i class="fas fa-plus"></i></a>
+                                    <a href="https://github.com/adesh-kumar09/aqua-harevst-project" title="View Code" target="_blank"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                    <!-- Item 2 -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 portfolio-item" data-aos="fade-up" data-aos-delay="200" id="project2">
+                         <div class="portfolio-wrap card border-0 shadow-sm h-100">
+                             <a href="https://adesh-kumar09.github.io/apple-web-recreate/" target="_blank" class="portfolio-img-link">
+                                <img src="Image/Apple Landpage.png" class="card-img-top" alt="Project 2" loading="lazy">
+                             </a>
+                            <div class="portfolio-info card-body">
+                                <h4 class="card-title">Apple Page Recreate</h4>
+                                <p class="card-text text-muted small">Category: Single Page</p>
+                                <div class="portfolio-links">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#portfolioModal2" title="More Details"><i class="fas fa-plus"></i></a>
+                                    <a href="https://github.com/adesh-kumar09/apple-web-recreate" title="View Code" target="_blank"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <!-- <div class="col-lg-4 col-md-6 col-sm-6 portfolio-item" data-aos="fade-up" data-aos-delay="300" id="project3">
+                         <div class="portfolio-wrap card border-0 shadow-sm h-100">
+                             <div class="portfolio-img-link">
+                                <img src="assets/img/project-3.jpg" class="card-img-top" alt="Project 3" loading="lazy">
+                             </div>
+                            <div class="portfolio-info card-body">
+                                <h4 class="card-title">Project Title Three</h4>
+                                <p class="card-text text-muted small">Category: Mixed Projects</p>
+                                <div class="portfolio-links">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#portfolioModal3" title="More Details"><i class="fas fa-plus"></i></a> -->
+                                    <!-- <a href="[Behance URL]" title="View on Behance" target="_blank"><i class="fab fa-behance"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- Item 4 -->
+                    <!-- <div class="col-lg-4 col-md-6 col-sm-6 portfolio-item filter-bootstrap filter-dev" data-aos="fade-up" data-aos-delay="400" id="project4">
+                         <div class="portfolio-wrap card border-0 shadow-sm h-100">
+                             <a href="[Live Project URL 4]" target="_blank" class="portfolio-img-link">
+                                <img src="assets/img/project-4.jpg" class="card-img-top" alt="Project 4" loading="lazy">
+                             </a>
+                            <div class="portfolio-info card-body">
+                                <h4 class="card-title">Project Title Four</h4>
+                                <p class="card-text text-muted small">Category: Bootstrap, Development</p>
+                                <div class="portfolio-links">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#portfolioModal4" title="More Details"><i class="fas fa-plus"></i></a>
+                                    <a href="[GitHub Repo URL 4]" title="View Code" target="_blank"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- Item 5 -->
+                     <!-- <div class="col-lg-4 col-md-6 col-sm-6 portfolio-item filter-design filter-dev" data-aos="fade-up" data-aos-delay="500" id="project5">
+                         <div class="portfolio-wrap card border-0 shadow-sm h-100">
+                             <a href="[Live Project URL 5]" target="_blank" class="portfolio-img-link">
+                                <img src="assets/img/project-5.jpg" class="card-img-top" alt="Project 5" loading="lazy">
+                             </a>
+                            <div class="portfolio-info card-body">
+                                <h4 class="card-title">Project Title Five</h4>
+                                <p class="card-text text-muted small">Category: Web Design, Development</p>
+                                <div class="portfolio-links">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#portfolioModal5" title="More Details"><i class="fas fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- Item 6 -->
+                     <!-- <div class="col-lg-4 col-md-6 col-sm-6 portfolio-item filter-dev filter-bootstrap filter-javascript" data-aos="fade-up" data-aos-delay="600" id="project6">
+                         <div class="portfolio-wrap card border-0 shadow-sm h-100">
+                             <a href="[Live Project URL 6]" target="_blank" class="portfolio-img-link">
+                                <img src="assets/img/project-6.jpg" class="card-img-top" alt="Project 6" loading="lazy">
+                             </a>
+                            <div class="portfolio-info card-body">
+                                <h4 class="card-title">Project Title Six</h4>
+                                <p class="card-text text-muted small">Category: Development, Bootstrap, JS</p>
+                                <div class="portfolio-links">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#portfolioModal6" title="More Details"><i class="fas fa-plus"></i></a>
+                                    <a href="[GitHub Repo URL 6]" title="View Code" target="_blank"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Portfolio Modals -->
+    <!-- Modal 1 -->
+    <div class="modal fade portfolio-modal" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content bg-dark-grey text-white">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="portfolioModal1Label">Rainwater Harvesting System</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                               
+                                <h6 class="text-primary text-uppercase mb-2">Project Overview</h6>
+                                <p class="mb-4">A smart inverter-based water harvesting system designed for urban households to collect and reuse rainwater, helping reduce water wastage and dependency on municipal supply.</p>
+                                <h6 class="text-primary text-uppercase mb-2">My Role & Contribution</h6>
+                                <p class="mb-4"> I independently designed and developed the entire website, including layout design, responsive UI development, and feature implementation. I handled everything from concept to deployment using HTML, CSS, JavaScript, and Bootstrap.</p>
+                                <h6 class="text-primary text-uppercase mb-2">Technologies Used</h6>
+                                <ul class="list-inline mb-4">
+                                    <li class="list-inline-item"><span class="badge bg-primary text-dark">HTML5</span></li>
+                                    <li class="list-inline-item"><span class="badge bg-primary text-dark">CSS3</span></li>
+                                    <li class="list-inline-item"><span class="badge bg-primary text-dark">Bootstrap 5</span></li>
+                                    <li class="list-inline-item"><span class="badge bg-primary text-dark">JavaScript</span></li>
+                                    <li class="list-inline-item"><span class="badge bg-primary text-dark">jQuery</span></li>
+                                </ul>
+                                <h6 class="text-primary text-uppercase mb-2">Key Features / Challenges</h6>
+                                <ul class="mb-4">
+                                    <li>Feature 1: Real-time water level tracking using animated graphs.</li>
+                                    <li>Challenge: Faced difficulty in integrating dynamic data without backend; solved using local storage and mock JSON data.</li>
+                                    <li>Outcome: Improved water efficiency and awareness among users.</li>
+                                </ul>
+                                <div class="mt-4 text-center text-lg-start">
+                                     <a href="https://adesh-kumar09.github.io/aqua-harevst-project/" class="btn btn-primary me-2 mb-2" target="_blank"><i class="fas fa-link me-1"></i> Visit Live Site</a>
+                                     <a href="https://github.com/adesh-kumar09/aqua-harevst-project" class="btn btn-outline-light mb-2" target="_blank"><i class="fab fa-github me-1"></i> View Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 2 -->
+    <div class="modal fade portfolio-modal" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content bg-dark-grey text-white">
+                 <div class="modal-header border-0">
+                    <h5 class="modal-title" id="portfolioModal2Label">Project Title Two</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                     <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <h6 class="text-primary text-uppercase mb-2">Apple Page Recreate</h6>
+                                <p class="mb-4">This project was created during my early practice in frontend development. As a beginner at the time, I chose to recreate an Apple website page to learn layout, styling, and responsive design. It represents one of my first steps in building real-world web interfaces.</p>
+                                <!-- <h6 class="text-primary text-uppercase mb-2">My Role & Contribution</h6>
+                                <p class="mb-4">...</p> -->
+                                <h6 class="text-primary text-uppercase mb-2">Technologies Used</h6>
+                                <ul class="list-inline mb-4">
+                                    <li class="list-inline-item"><span class="badge bg-primary text-dark">HTML5</span></li>
+                                    <li class="list-inline-item"><span class="badge bg-primary text-dark">CSS3</span></li>
+                                      <li class="list-inline-item"><span class="badge bg-primary text-dark">Bootstrap</span></li>
+                                <!-- </ul>
+                                <h6 class="text-primary text-uppercase mb-2">Key Features / Challenges</h6>
+                                <ul class="mb-4">
+                                    <li>...</li>
+                                </ul> -->
+                                <div class="mt-4 text-center text-lg-start">
+                                     <a href="https://adesh-kumar09.github.io/apple-web-recreate/" class="btn btn-primary me-2 mb-2" target="_blank"><i class="fas fa-link me-1"></i> Visit Live Site</a>
+                                     <a href="https://github.com/adesh-kumar09/apple-web-recreate" class="btn btn-outline-light mb-2" target="_blank"><i class="fab fa-github me-1"></i> View Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ... Modals 3, 4, 5, 6 ... -->
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 text-center text-md-start">
+                    <div class="footer-brand">
+                        <h3>Adesh</h3>
+                        <p>Frontend Developer & Web Designer</p>
+                    </div>
+                </div>
+               <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 text-center text-md-center">
+                    <h5 class="text-white mb-3">Connect</h5>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/adesh-makhija-a08a93361/" class="social-icon me-2" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/adesh-kumar09" class="social-icon me-2" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/codewithadiii?igsh=MTQ1aG8zbjQwM3J3Yg==
+" class="social-icon me-2" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                  <div class="col-lg-4 col-md-12 text-center">
+                     <h5 class="text-white mb-3">Quick Links</h5>
+                    <div class="footer-nav">
+                        <a href="contact.html" class="footer-link">Start a Project</a> <span class="footer-link-divider">|</span>
+                        <a href="services.html" class="footer-link">View Services</a> <span class="footer-link-divider">|</span>
+                        <a href="about.html" class="footer-link">About Me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer-bottom mt-4 pt-4">
+                <div class="col text-center text-white-50 small">
+                    Copyright &copy; <span id="currentYear"></span> - Adesh. All Rights Reserved.
+                    <span class="mx-2">|</span>
+                    <a href="#!" class="link-light text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#!" class="link-light text-decoration-none">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+     <!-- Back to Top Button -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JS Libraries and app.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js" defer></script>
+    <script src="app.js" defer></script>
+</body>
+</html>
